@@ -1,0 +1,89 @@
+body{
+    margin:0px;
+    padding: 0;
+}
+
+.background {
+  
+    width:100%;
+    height:100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25)) ,url(pexels-thorsten-technoman-338504.jpg);
+    background-size:cover;
+    position: relative;
+   
+}
+   
+  
+.title{
+   
+ position:fixed;
+    margin-left: 290px;
+    margin-top: 250px;
+   
+    
+   
+}
+
+.nav{
+    margin-left:66%;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+  
+
+}
+.nav ul li{
+    display: inline-block;
+    padding: 10px;;
+
+    
+}
+.nav ul li a{
+   
+    color: rgb(197, 212, 224);
+    text-decoration: none;
+    text-transform: uppercase ;
+    font-size: x-large;
+    font-family: monospace;
+  
+}
+
+   
+ul li a:hover {
+    color: cadetblue;
+   
+
+}
+.book {
+    
+    margin-left: 59%;
+    margin-top: 11%;
+    font-size:2rem;
+    font-family:monospace;
+    color: rgb(33, 230, 118);
+}
+
+
+.book span {
+position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    animation: flip 2s infinite;
+    animation-delay: calc(.2s * var(--i))
+   
+}
+
+.second_section{
+    background-image:linear-gradient(rgba(0,0,0,0.25),rgba(0,0,0,0.25)) ,url(pexels-pixabay-261169.jpg);
+    position:absolute;
+  
+    
+}
+
+
+
+@keyframes flip {
+    0%,80% {
+      transform: rotateY(360deg) 
+    }
+  }
